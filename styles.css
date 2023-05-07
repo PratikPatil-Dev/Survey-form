@@ -1,0 +1,59 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(https://images.pexels.com/photos/773063/pexels-photo-773063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+#content {
+  opacity: 0.5;
+  margin: 0 auto 60px 10px;
+  display: flex;
+  background-color: #8a888862;
+  width: 28%;
+  opacity: 0.6;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.heading {
+  color: #ffff3f;
+  text-align: center;
+}
+
+.heading h1 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+input,
+select,
+textarea {
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.form-element:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#submit {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+

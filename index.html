@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <section id="content">
+      <form id="survey-form">
+        <div class="heading">
+          <h1 id="title">Sample Survey Form</h1>
+          <p id="description">
+            Fill out the follwing form to give your feedback.
+          </p>
+        </div>
+        <div class="form-element one1">
+          <label id="name-label">Name</label><br />
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <br />
+        </div>
+        <div class="form-element two2">
+          <label id="email-label">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="Enter your Email"
+            required
+          /><br />
+        </div>
+        <div class="form-element three3">
+          <label id="number-label">Age</label><br />
+          <input
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="0"
+            max="100"
+          />
+          <br />
+        </div>
+        <div class="form-element four4">
+          <lable id="dropdown-label">Your favourite Sport:</lable><br />
+          <select id="dropdown" name="sports">
+            <option selected disabled>Choose your favorite sport</option>
+            <option>Cricket</option>
+            <option>Soccer</option>
+            <option>Basket Ball</option></select
+          ><br />
+        </div>
+        <div class="form-element five5">
+          <lable id="radio">How active are you?</lable><br />
+          <input type="radio" name="active" value="lazy" checked />
+          <label>Lazy</label><br />
+          <input type="radio" name="active" value="Moerate" />
+          <label>Moderate</label><br />
+          <input type="radio" name="active" value="Active" />
+          <label>Active</label><br />
+        </div>
+        <div class="form-element six6">
+          <label>What kind of sports/games you play?</label><br />
+
+          <input type="checkbox" name="sport1" value="Indoor" />
+          <label for="sport1"> Indoor games</label><br />
+
+          <input type="checkbox" name="sport2" value="Outdoor" />
+          <label for="sport1"> Outdoor games</label><br />
+        </div>
+        <div class="form-element seven7">
+          <label>What benefits do you get from playing sports?</label><br />
+          <textarea
+            name="message"
+            rows="8"
+            cols="40"
+            placeholder="Type your opinion..."
+          ></textarea
+          ><br />
+        </div>
+
+        <div class="form-element eight8">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
